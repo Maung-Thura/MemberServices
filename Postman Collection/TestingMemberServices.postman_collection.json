@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "64c1715d-e47d-4f39-9443-ee68837cac75",
+		"name": "TestingMemberServices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TestAddingNewMember",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\":\"James\",\"lastName\":\"Bond\",\"email\":\"jbond@mi6.gov.uk\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/members/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"members",
+						""
+					]
+				},
+				"description": "Test adding a new member service"
+			},
+			"response": []
+		},
+		{
+			"name": "TestGettingAllMembers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/members/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"members",
+						""
+					]
+				},
+				"description": "Test getting all members service"
+			},
+			"response": []
+		},
+		{
+			"name": "TestGettingMemberById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/members/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"members",
+						"1"
+					]
+				},
+				"description": "Test getting member by ID"
+			},
+			"response": []
+		},
+		{
+			"name": "TestRemovingMemberById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/members/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"members",
+						"1"
+					]
+				},
+				"description": "Test removing member by ID"
+			},
+			"response": []
+		},
+		{
+			"name": "TestChangingMemberDetailsById",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\":\"Sarah\",\"lastName\":\"Belchin\",\"email\":\"sbelchin@mailzone.com\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/members/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"members",
+						"4"
+					]
+				},
+				"description": "Test changing member details by ID"
+			},
+			"response": []
+		}
+	]
+}

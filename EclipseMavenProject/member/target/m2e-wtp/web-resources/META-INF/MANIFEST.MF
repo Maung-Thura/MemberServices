@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: member WebApp
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: maung
+Implementation-Vendor-Id: test.collinson.spring
+Build-Jdk: 1.8.0_171
+Implementation-URL: http://localhost:8080
+Created-By: Maven Integration for Eclipse
+
